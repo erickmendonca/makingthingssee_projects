@@ -1,4 +1,5 @@
 import SimpleOpenNI.*;
+
 SimpleOpenNI kinect;
 void setup()
 {

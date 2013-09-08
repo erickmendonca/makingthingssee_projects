@@ -1,11 +1,11 @@
 import SimpleOpenNI.*;
 
-SimpleOpenNI kinect;
+SimpleOpenNI kinect = new SimpleOpenNI(this);
 
 void setup()
 {
   size(640*2, 480);
-  kinect = new SimpleOpenNI(this);
+
   kinect.enableDepth();
   //kinect.enableRGB();
   kinect.enableIR();
@@ -19,3 +19,4 @@ void draw()
   //image(kinect.rgbImage(), 640, 0);
   image(kinect.irImage(), 640, 0);
 }
+
